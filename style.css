@@ -28,9 +28,19 @@ h4 {
   font-size: 1.5rem;
   font-weight: 300;
 }
+ 
+/* i use this to make my picture take the full available space */
+picture {
+  display: block;
+  width: 100%;
+  
+}
 
+/* i use this to make my image fit the screen without changing its shape */
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 @media (min-width: 960px) {

@@ -15,7 +15,40 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+    <!-- I use picture to show the right image for different screen sizes -->
+    <picture>
+      <!-- square images are used on larger screens -->
+   <source
+  media="(min-width: 960px)"
+  srcset="
+    images/square/museum-480x480.jpg 480w,
+    images/square/museum-640x640.jpg 640w,
+    images/square/museum-800x800.jpg 800w,
+    images/square/museum-960x960.jpg 960w,
+    images/square/museum-1280x1280.jpg 1280w,
+    images/square/museum-1440x1440.jpg 1440w,
+    images/square/museum-1600x1600.jpg 1600w,
+    images/square/museum-1920x1920.jpg 1920w,
+    images/square/museum-2400x2400.jpg 2400w
+  "
+  sizes="(min-width: 960px) 640px, 100vw"
+>
+<!-- landscape images are used on smaller screens -->
+    <img
+  src="images/museum.jpg"
+  srcset="
+    images/landscape/museum-320x.jpg 320w,
+    images/landscape/museum-480x.jpg 480w,
+    images/landscape/museum-720x.jpg 720w,
+    images/landscape/museum-960x.jpg 960w,
+    images/landscape/museum-1440x.jpg 1440w,
+    images/landscape/museum-2160x.jpg 2160w
+  "
+  sizes="100vw"
+  alt="Museum gallery"
+>
+
+    </picture>  
 
   </header>
 </body>

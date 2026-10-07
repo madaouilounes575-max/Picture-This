@@ -15,9 +15,9 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <!-- I use picture to show the right image for different screen sizes -->
-    <picture>
-      <!-- square images are used on larger screens -->
+ <!-- The picture element provides different image sources depending on the viewport size-->
+<picture>
+  <!-- Square images are selected when the viewport is 960px or wider-->
    <source
   media="(min-width: 960px)"
   srcset="
@@ -33,7 +33,8 @@
   "
   sizes="(min-width: 960px) 640px, 100vw"
 >
-<!-- landscape images are used on smaller screens -->
+<!-- Landscape versions are selected below 960px to provide the appropriate image ratio for 
+ smaller screens-->
     <img
   src="images/museum.jpg"
   srcset="

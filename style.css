@@ -6,43 +6,37 @@ body {
   border: 0;
   font-family: 'Roboto', sans-serif;
 }
-
 .header {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
   background-color: cadetblue;
 }
-
 .title {
   padding: 50px 25px;
   text-align: center;
 }
-
 h1 {
   font-size: 3rem;
   margin: 0;
 }
-
 h4 {
   font-size: 1.5rem;
   font-weight: 300;
 }
- 
-/* i use this to make my picture take the full available space */
+/** just using this option to make the picture take the full availaible spacei **/
 picture {
   display: block;
   width: 100%;
   
 }
-
-/* i use this to make my image fit the screen without changing its shape */
+/* Makes the image fill the available width while keeping its original aspect ratio to prevent
+ distortion. */
 img {
   display: block;
   width: 100%;
   height: auto;
 }
-
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
